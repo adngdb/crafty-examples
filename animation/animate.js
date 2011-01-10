@@ -18,7 +18,7 @@ $(document).ready(function() {
      * Each part of the sprite is 128px * 128px
      * The "mino" part of the sprite begins in 4 * 128px / 0 * 128px and has a size of 1 * 128px / 1 * 128px
      */
-    Crafty.sprite(128, "images/characters/minotaur.png", {
+    Crafty.sprite(128, "../resources/images/minotaur.png", {
         mino: [4, 0, 1, 1],
     });
 
@@ -34,10 +34,10 @@ $(document).ready(function() {
             // Bind the "enterframe" event, called every time the frame is displayed
             this.bind("enterframe", function() {
                 // If the animation is not playing anymore, then reload it
-                if (!this.isPlaying("walk-left"))
+                if (!this.isPlaying("anim"))
                 {
                     this.sprite(4, 0, 1, 1);        // Go back to the first sprite of the animation
-                    this.animate("walk-left", 20);  // Launch the animation, changing sprite every 20ms
+                    this.animate("anim", 20);       // Launch the animation, changing sprite every 20ms
                 }
             });
         },
@@ -47,6 +47,6 @@ $(document).ready(function() {
     // an animation (previously declared component), a 2D and a DOM element.
     mino = Crafty.e("2D, DOM, mino, animation")
         .attr({x: 0, y: 0, w: 128, h: 128}) // Set the position
-        .animate("walk-left", 5, 0, 11);    // Create the "walk-left" animation,
+        .animate("anim", 5, 0, 11);         // Create the "anim" animation,
                                             // starting from coordinate x=5 and going to x=11, with y=0
 });
