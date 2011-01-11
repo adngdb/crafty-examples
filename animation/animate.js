@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     // Create a new entity which is a mino (previously declared sprite),
     // an animation (previously declared component), a 2D and a DOM element.
-    mino = Crafty.e("2D, DOM, mino, animation")
+    var mino = Crafty.e("2D, DOM, mino, animation")
         .attr({x: 0, y: 0, w: 128, h: 128}) // Set the position
         .animate("anim", 5, 0, 11);         // Create the "anim" animation,
                                             // starting from coordinate x=5 and going to x=11, with y=0
