@@ -8,3 +8,4 @@ Animation
 
 This code creates a new Component that manages eternally animated elements, and displays it on the screen.
 Uses the Component / Entity model and the Crafty's sprite tools.
+See [Creating An Eternal Animation With Crafty.js](http://programmateur.lqbs.fr/blog/creating-an-eternal-animation-with-crafty-js/)
