@@ -19,9 +19,7 @@ $(document).ready(function() {
     Crafty.init(50, width, height);
 
     /*
-     * Declare a sprite resource
-     * Each part of the sprite is 128px * 128px
-     * The "mino" part of the sprite begins in 4 * 128px / 0 * 128px and has a size of 1 * 128px / 1 * 128px
+     * Declare sprite resources
      */
     Crafty.sprite(spriteSize, "../resources/images/map.png", {
         grass1: [0, 0, 1, 1],
