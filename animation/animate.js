@@ -12,6 +12,7 @@ $(document).ready(function() {
 
     // Create the Crafty context, with a frame rate of 50 ips, and a window size of 130px * 130px
     Crafty.init(50, 130, 130);
+    Crafty.canvas();
 
     /*
      * Declare a sprite resource
